@@ -10,6 +10,9 @@ app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
 // Connect Data Base
 connectDB();
 
+// Initialize Middleware
+app.use(express.json({ extended: false }));
+
 // Define Routes
 app.use("/api/users", require("./routes/api/users"));
 app.use("/api/auth", require("./routes/api/auth"));
