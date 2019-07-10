@@ -1,13 +1,12 @@
 ////////////////////////
-//      U S E R S     //
+//       P O S T      //
 ////////////////////////
-
 const express = require("express");
 const router = express.Router();
 
-// @route    GET api/users
+// @route    GET api/posts
 // @desc     Test route
 // @access   Public
-router.get("/", (req, res) => res.send("User route"));
+router.get("/", (req, res) => res.send("Posts route"));
 
 module.exports = router;
